@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ABC Hospital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+  <h1><a href="index.html"><img src="images/abch.png" alt="" width="60"></a><font color="#541a8b" face="Arial"> ABC Hospital<a href="http://instagram.com"><img src="images/insta.png" alt="" width="20" align="right"></a><a href="http://facebook.com"><img src="images/facebook.png" alt="" width="20" align="right"> </a><a href="http://twitter.com"><img src="images/twitter.png" alt="" width="20" align="right"> </a></h1>
+<p align="right"></p>
+  <hr>
+      <table  cellpadding='12' bgcolor="#541a8b" width="100%" >
+        <thead>
+          <th align="left"><a href="index.html" ><font color="white" face="Arial">Home </a>  </th>
+          <th align="left"><a href="departments.html"><font color="white" face="Arial">Departments </th>
+          <th align="left"><a href="#"><font color="white" face="Arial">Patient Registration</th>
+          <th width="60%"> </th>
+          <th><a href="aboutus.html" align="right"><font color="white" face="Arial">About Us </th>
+          <th><a href="contactus.html"><font color="white" face="Arial">Contact Us</th>
+        </thead>
+      </table>
+      <hr>
+
+      <table align="center" cellspacing="0"cellpadding="3" width="55%">
+        <thead >
+          <th><h2 align="left" >ABC Hospitals</h2></th>
+          <th></th>
+          <th><h2 align="right">Patient Registration Form</h2></th>
+            </thead>
+        <thead bgcolor="green">
+              <th colspan="3"><font color="white">PERSONAL INFORMATION</th>
+        </thead>
+        <tr bgcolor="#EBEEEF" >
+              <td colspan="3" ><form class="registration" action="thankyou.html" method="post">
+              <br>
+              <label for="name"><font color="black">Enter Full Name</label>
+              <input id="name" type="text" name="Patientname" value="" placeholder="Enter Full Name" required>
+              &nbsp;&nbsp;
+              <label for="age">Enter Age</label>
+              &nbsp;&nbsp;<input id="age" type="number" name="Patientage" value="" min="1" placeholder="Enter Age in years" required>
+              Gender:<label for="male">Male</label><input id="male" type="radio" name="gender" value="male" required><label for="female">Female</label><input id="female" type="radio" name="gender" value="female"><label for="other">Other</label><input id="other" type="radio" name="gender" value="other">
+              <br><br><label for="email">Enter Email-Id</label>
+              <input id="email" type="email" name="Email" value="" placeholder="Enter Email Id">
+              <label for="mobile">Mobile Number</label>
+              <input id="mobile" type="tel" name="mobile" value="" placeholder="Enter Mobile Number" pattern="[0-9]{10}" title="Pls enter 10 digit mobile number" required>
+              <label for="add">Address</label>
+              <input id="add" type="text" name="address" value="" required >
+              <br><br><label for="city">City</label>
+              <input id="city" type="text" name="city" value="" required>
+              <label for="state">State</label>
+              <input id="state" type="text" name="state" value="" required>
+              <label for="pin">Pincode</label>
+              <input id="pin" type="text" name="pincode" value="" pattern="[0-9]{6}" title="Pls enter 6 digit pincode" required><br><br>
+            </td>
+
+             <thead bgcolor="green">
+                 <th colspan="3"><font color="white">APPOINTMENT</th><br>
+            </thead>  </tr>
+            <tr bgcolor="#EBEEEF">
+              <td align="center"><p><font color="black">Select Department</p>  <select class="" name="" required>
+                <option value="" >Select</option>
+                <option value="">Cardiology</option>
+                <option value="">Neurology</option>
+                <option value="">Orthopedics</option>
+                <option value="">Pediatrics</option>
+                <option value="">Dentistry</option>
+              </select>
+</td>
+           <td><p><font color="black">Select Doctor</p>  <select class="" name="" required>
+               <option value="" >Select</option>
+               <optgroup label="Cardiology"></optgroup>
+               <option value="">Dr. Rajesh Verma</option>
+               <option value="">Dr. Sneha Iyer</option>
+               <option value="">Dr. Arvind Nair</option>
+               <optgroup label="Neurology"></optgroup>
+               <option value="">Dr. Prashant Kulkarni</option>
+               <option value="">Dr. Meera Sharma</option>
+               <option value="">Dr. Vivek Menon</option>
+               <optgroup label="Orthopedics"></optgroup>
+               <option value="">Dr. Suresh Bansal</option>
+               <option value="">Dr. Neha Choudhary</option>
+               <option value="">Dr. Rohit Kapoor</option>
+               <optgroup label="Pediatrics"></optgroup>
+               <option value="">Dr. Arjun Mishra</option>
+               <option value="">Dr. Shweta Rao</option>
+               <option value="">Dr. Kiran Gupta</option>
+                <optgroup label="Dentistry"></optgroup>
+               <option value="">Dr. Manish Patil</option>
+               <option value="">Dr. Pooja Sethi</option>
+               <option value="">Dr. Sameer Joshi</option>
+               </select>
+</td>
+<td align="center">
+<p> <font color="black">Describe Symptoms:</p> <textarea id="symptoms" name="symptoms" rows="8" cols="50"></textarea><br><br> </td>
+</tr>
+<thead bgcolor="green">
+    <th colspan="3"><font color="white">DECLARATION</th><br>
+</thead>
+<tr bgcolor="#EBEEEF">
+  <td colspan="3"><p><input type="checkbox" name="declare" value="" required ><font color="black"> <b>Declaration:</b> I hereby declare that the information provided above is true and correct.</p>
+    <input type="submit" name="" value="Book Appointment"> &nbsp; &nbsp;<input type="reset" name="" value="Clear">
+            </form>
+<br><br> </td>
+
+      </table>
